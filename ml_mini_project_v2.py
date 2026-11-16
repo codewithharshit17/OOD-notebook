@@ -1065,28 +1065,3 @@ display(
     ].round(4)
 )
 
-"""# 17. How to report the findings
-
-Do not write conclusions before running the experiments. Use the actual output to complete statements such as:
-
-- The detection method with the highest AUROC on SVHN was ______.
-- As corruption severity increased, ______.
-- The classifier accuracy under ______ corruption changed from ______ to ______.
-- Augmentation changed OOD detection performance by ______.
-- The clean-calibrated threshold rejected ______% of familiar corrupted images.
-- The corruption-aware threshold did / did not generalize to unseen severity levels.
-
-## Limitations to state
-- Synthetic corruptions are controlled approximations, not official CIFAR-10-C.
-- CIFAR-10 and SVHN differ in more than semantic labels (image style, resolution and acquisition domain), so SVHN results should be interpreted as a dataset-level semantic OOD comparison.
-- A small CNN and a small number of epochs are useful for a student experiment but limit generalization.
-- Results from one seed are preliminary; repeat runs for stronger evidence.
-- Mahalanobis performance depends on feature quality and covariance estimation.
-
-## Suggested next improvements
-1. Repeat training with seeds 42, 123 and 2026.
-2. Increase training epochs and evaluation sample sizes.
-3. Add official CIFAR-10-C if time and storage permit.
-4. Add a held-out OOD dataset for an additional generalization test.
-5. Package the corruption and scoring functions as a reusable open-source utility.
-"""
