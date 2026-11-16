@@ -554,7 +554,4 @@ This project is intended as an educational and experimental research contributio
 
 ---
 
-## License
-
-Choose an appropriate open-source license before publishing the repository. The MIT License is one option for code that you intend to make reusable, subject to the licensing terms of the dependencies and referenced resources.
 
